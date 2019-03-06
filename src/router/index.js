@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Content from '@/components/Content'
 import Home from '@/components/Home'
 import View from '@/components/View'
+import Index from '@/components/Index'
 
 Vue.use(Router)
 
@@ -22,9 +23,7 @@ export default new Router({
       path:'/index',
       name:'index',
       components:{
-        home:Home,
-        content:Content,
-        view:View
+        index:Index
       }
     }
   ],

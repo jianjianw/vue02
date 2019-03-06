@@ -1,8 +1,12 @@
 <template>
   <div id="app">
+    <div style="position:absolute;left:600px;top:0px">
+      我想倡议
+    </div>
     <router-view name = "content"/>
     <router-view name = "home"/>
     <router-view name = "view"/>
+    <router-view name = "index"/>
 
     <router-view/>
   </div>

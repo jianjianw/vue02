@@ -5,11 +5,12 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-import iview from 'iview'
+import iView from 'iview'  //引入ivew库
+import 'iview/dist/styles/iview.css'  // 使用 CSS
 
 
 Vue.use(VueAxios, axios)
-Vue.use(iview)
+Vue.use(iView)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

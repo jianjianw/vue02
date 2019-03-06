@@ -2,10 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Content from '@/components/Content'
 import Home from '@/components/Home'
-import axios from 'axios'
+import View from '@/components/View'
 
 Vue.use(Router)
-Vue.prototype.$ajax = axios
 
 export default new Router({
   routes: [
@@ -18,6 +17,15 @@ export default new Router({
       path : '/home',
       name : 'Home',
       component : Home
+    },
+    {
+      path:'/index',
+      name:'index',
+      components:{
+        home:Home,
+        content:Content,
+        view:View
+      }
     }
   ],
   mode: "history"

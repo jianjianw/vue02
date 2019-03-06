@@ -1,6 +1,9 @@
 <template>
-    <p>{{message}}</p>
+  <div>
+    <router-link  to="/home">跳转到home</router-link>
 
+    <p>{{message}}</p>
+  </div>
 </template>
 
 <script>
